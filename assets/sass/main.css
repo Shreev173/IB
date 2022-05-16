@@ -56,6 +56,11 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
 h4 {
   font-size: 1.375rem;
   font-weight: 600;
@@ -129,6 +134,80 @@ a:hover {
 
 #attributes .attr_img {
   margin-left: 40px;
+}
+
+.team_images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+  margin-top: 120px;
+}
+
+.team_images .img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.team_images .item-2 {
+  padding-top: 80px;
+}
+
+.team_images .item-3 {
+  padding-bottom: 160px;
+}
+
+.team_images .item-4 {
+  padding-bottom: 30px;
+}
+
+.team_images .item-5 {
+  padding-top: 250px;
+}
+
+.team_images .item-6 {
+  margin-top: -500px;
+}
+
+.team_images .item-7 {
+  margin-top: -420px;
+}
+
+.team_images .item-8 {
+  margin-top: -540px;
+}
+
+.team_images .item-9 {
+  margin-top: -480px;
+}
+
+.team_images .item-10 {
+  margin-top: -230px;
+}
+
+.team_images .item-11 {
+  margin-top: -990px;
+}
+
+.team_images .join {
+  grid-column: span 3;
+  background-color: #36be21;
+  margin-top: -335px;
+  height: 350px;
+}
+
+.team_images .p-3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.team_images .item-12 {
+  margin-top: -740px;
 }
 
 @media screen and (max-width: 985px) {
