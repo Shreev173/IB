@@ -65,6 +65,11 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
+a:hover {
+  color: #36be21;
+  text-decoration: none;
+}
+
 .py-section {
   margin-top: 120px;
 }
@@ -120,5 +125,18 @@ p {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 28px;
+}
+
+#attributes .attr_img {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 985px) {
+  #We .numbers {
+    margin-left: 0;
+  }
+  #attributes .attr_img {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
