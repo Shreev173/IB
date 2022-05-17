@@ -141,8 +141,8 @@ a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
   grid-gap: 20px;
   margin-top: 120px;
 }
@@ -208,6 +208,46 @@ a:hover {
 
 .team_images .item-12 {
   margin-top: -740px;
+}
+
+.team_images .item-13 {
+  margin-top: -1490px;
+}
+
+.team_images .item-14 {
+  margin-top: -1260px;
+}
+
+.team_images .item-15 {
+  margin-top: -1195px;
+}
+
+.team_images .item-16 {
+  margin-top: -1310px;
+}
+
+.team_images .item-17 {
+  margin-top: -1250px;
+}
+
+.team_images .item-18 {
+  margin-top: -1450px;
+}
+
+.team_images .item-19 {
+  margin-top: -1170px;
+}
+
+.team_images .item-20 {
+  margin-top: -1040px;
+}
+
+.team_images .item-21 {
+  margin-top: -1270px;
+}
+
+.team_images .item-22 {
+  margin-top: -1210px;
 }
 
 @media screen and (max-width: 985px) {
