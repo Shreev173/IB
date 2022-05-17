@@ -24,6 +24,10 @@ body {
   color: $primary-900;
 }
 
+.grayscale-600 {
+  color: $grayscale-600;
+}
+
 .grayscale-700 {
   color: $grayscale-700;
 }
@@ -43,7 +47,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: $font-family-head;
 }
 
@@ -64,6 +69,11 @@ h3 {
 
 h4 {
   font-size: 1.375rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
@@ -249,6 +259,63 @@ a:hover {
   .item-22 {
     margin-top: -1210px;
   }
+
+  .item {
+    position: relative;
+
+    &:hover .post {
+      opacity: 1;
+    }
+  }
+
+  .post {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $grayscale-900;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1000ms;
+    cursor: pointer;
+  }
+}
+
+//footer
+
+#footer {
+  background-color: $grayscale-800;
+  padding: 60px 0;
+
+  .p-footer {
+    font-weight: 600;
+  }
+
+  .footer_email {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .footer_links {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .footer_inner {
+    margin-left: 12px;
+  }
+  .footer_inner2 {
+    margin-left: 65px;
+  }
+
+  .footer_inner3 {
+    margin-left: 40px;
+  }
 }
 
 //media queries
@@ -260,5 +327,17 @@ a:hover {
 
   #attributes .attr_img {
     margin-left: 0;
+  }
+
+  #footer {
+    .footer_inner,
+    .footer_inner2,
+    .footer_inner3 {
+      margin: 0;
+    }
+
+    .main {
+      margin-top: 40px;
+    }
   }
 } ;

@@ -23,6 +23,10 @@ body {
   color: #37a027;
 }
 
+.grayscale-600 {
+  color: #b8b8b8;
+}
+
 .grayscale-700 {
   color: #7a7a7a;
 }
@@ -42,7 +46,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Lora", serif;
 }
 
@@ -63,6 +68,11 @@ h3 {
 
 h4 {
   font-size: 1.375rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
@@ -250,12 +260,86 @@ a:hover {
   margin-top: -1210px;
 }
 
+.team_images .item {
+  position: relative;
+}
+
+.team_images .item:hover .post {
+  opacity: 1;
+}
+
+.team_images .post {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 1000ms;
+  transition: opacity 1000ms;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #292929;
+  padding: 60px 0;
+}
+
+#footer .p-footer {
+  font-weight: 600;
+}
+
+#footer .footer_email {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+#footer .footer_links {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+#footer .footer_inner {
+  margin-left: 12px;
+}
+
+#footer .footer_inner2 {
+  margin-left: 65px;
+}
+
+#footer .footer_inner3 {
+  margin-left: 40px;
+}
+
 @media screen and (max-width: 985px) {
   #We .numbers {
     margin-left: 0;
   }
   #attributes .attr_img {
     margin-left: 0;
+  }
+  #footer .footer_inner,
+  #footer .footer_inner2,
+  #footer .footer_inner3 {
+    margin: 0;
+  }
+  #footer .main {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */
