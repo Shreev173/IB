@@ -299,26 +299,56 @@ a:hover {
 
 //tab
 
-#tab {
-  .active {
-    color: $grayscale-900;
+#tab-section {
+  // .active {
+  //   color: $grayscale-900;
+  // }
+
+  // .inactive {
+  //   color: $grayscale-700;
+  // }
+
+  // .nav-tabs .nav-link {
+  //   font-family: $font-family-base;
+  //   font-weight: 600;
+  //   font-size: 1.125rem;
+  //   border: none;
+  //   border-top-left-radius: 0.25rem;
+  //   border-top-right-radius: 0.25rem;
+  // }
+
+  // .nav-tabs {
+  //   border-bottom: none;
+  // }
+
+  .tabs {
+    font-family: $font-family-base;
+    font-size: 1.125rem;
+    font-weight: 600;
   }
 
-  .inactive {
+  [data-tab-content] {
+    display: none;
+  }
+
+  .active[data-tab-content] {
+    display: block;
+  }
+
+  .tabs {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .tab {
+    cursor: pointer;
+    margin-left: 10px;
     color: $grayscale-700;
   }
 
-  .nav-tabs .nav-link {
-    font-family: $font-family-base;
-    font-weight: 600;
-    font-size: 1.125rem;
-    border: none;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-  }
-
-  .nav-tabs {
-    border-bottom: none;
+  .tab.active {
+    color: $grayscale-900;
+    border-bottom: 2px solid $grayscale-900;
   }
 
   .portfolio {
@@ -344,10 +374,6 @@ a:hover {
   .view {
     position: absolute;
     top: 400px;
-  }
-
-  .mm {
-    display: inline-block;
   }
 }
 
