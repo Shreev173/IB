@@ -90,6 +90,23 @@ a:hover {
   margin-top: 120px;
 }
 
+@mixin p-1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+@mixin p-2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+@mixin p-3 {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
 #header {
   background-color: $grayscale-900;
   font-family: $font-family-base;
@@ -129,10 +146,8 @@ a:hover {
 }
 
 #We {
-  .p-1 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-top: 40px;
+  p {
+    @include p-1;
   }
 
   .numbers {
@@ -141,10 +156,8 @@ a:hover {
 }
 
 #attributes {
-  .p-2 {
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 28px;
+  p {
+    @include p-2;
   }
 
   .attr_img {
@@ -155,7 +168,7 @@ a:hover {
 //teams
 
 .team-enroll-text-wrapper {
-  background-color: #36be21;
+  background-color: $primary-700;
   height: 280px;
   width: 100%;
 }
@@ -193,9 +206,11 @@ a:hover {
 .masonry-item-img-lg {
   height: 260px;
 }
+
 .masonry-item-img-xl {
   height: 320px;
 }
+
 .item img {
   object-fit: cover;
   height: 100%;
@@ -242,6 +257,97 @@ a:hover {
 
   .footer_inner3 {
     margin-left: 40px;
+  }
+}
+
+//Light Header
+#lheader {
+  font-family: $font-family-base;
+  font-weight: 600;
+  padding-bottom: 100px;
+
+  .navbar-light .navbar-nav .nav-link {
+    color: $grayscale-800;
+  }
+
+  .navbar-light .navbar-nav .active > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: $primary-700;
+  }
+
+  .nav-item {
+    padding-left: 24px;
+  }
+
+  // nav button
+
+  .nav-button {
+    margin-left: 24px;
+  }
+  .button {
+    border-radius: 30px;
+    border: 2px solid $primary-700;
+    padding: 12px 32px;
+  }
+
+  p {
+    @include p-3;
+  }
+}
+
+//tab
+
+#tab {
+  .active {
+    color: $grayscale-900;
+  }
+
+  .inactive {
+    color: $grayscale-700;
+  }
+
+  .nav-tabs .nav-link {
+    font-family: $font-family-base;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .portfolio {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .p-image {
+      transform: scale(1.3);
+    }
+  }
+
+  .p-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: $white;
+  }
+
+  .p-image {
+    transition: transform 2s ease-in-out;
+  }
+
+  .view {
+    position: absolute;
+    top: 400px;
+  }
+
+  .mm {
+    display: inline-block;
   }
 }
 
